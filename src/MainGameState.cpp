@@ -17,7 +17,7 @@ void MainGameStateInit(OPgameState* last) {
 	OPmaterialInit(&mainGame.TestMaterial, &mainGame.SimpleModelEffect);
 
 	mainGame.Camera = OPcamPersp(
-		OPvec3Create(10,10,10),
+		OPvec3Create(5,5,5),
 		OPVEC3_ZERO,
 		OPVEC3_UP,
 		0.1f, 100.0f,
