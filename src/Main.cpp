@@ -13,8 +13,6 @@ void ApplicationInit() {
 	OPloadersAddDefault();
 	OPcmanInit(OPIFEX_ASSETS);
 
-	// There a reason this is set low?
-	//OPrenderSetScreenSize(800, 600);
 	OPrenderInit();
 
 	OPgamePadSetDeadzones(0.15);
