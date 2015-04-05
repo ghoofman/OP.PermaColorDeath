@@ -9,8 +9,7 @@ varying vec3 vColor;
 
 void main() {	
 	
-	vec4 worldPos = uWorld * vec4(aPosition, 1.0);
-	gl_Position = (uProj * uView) * worldPos; 
+	gl_Position = (uProj * uView * uWorld) * vec4(aPosition, 1.0); 
 	
 	vColor = aColor;
 }
